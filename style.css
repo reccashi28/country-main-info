@@ -4,24 +4,58 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+/* ------------------ header ------------- */
+
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     height: 30vh;
     background-image: radial-gradient(circle, #480202, maroon);
     color: white;
+    text-align: center;
+    padding: 10px;
+    flex-direction: column;
 }
 
 header h1 {
-    font-size: 50px;
+    font-size: 45px;
 }
+.search input,
+.search button {
+    font-size: 20px;
+    padding: 2px;
+    border-radius: 2px;
+    border: none;
+}
+.search {
+    width: 23%;
+    margin: 1rem;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.search input:focus,
+.search button:focus {
+    outline: none;
+}
+
+.search button {
+    cursor: pointer;
+}
+/* ------------------ end of header ------------- */
+
 
 .countries {
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 100%;
     /* border: 2px solid green; */
     position: relative;
@@ -31,6 +65,7 @@ header h1 {
     
 }
 
+/* --------- added elements ----- */
 .country-img {
     /* position: absolute; */
     width: 300px;
@@ -82,3 +117,5 @@ header h1 {
 .country-data {
     padding: 1rem;
 }
+
+/* --------- end of added elements ----- */
