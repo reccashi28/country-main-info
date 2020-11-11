@@ -29,7 +29,7 @@ const searchBtn = document.querySelector('.country-btn');;
                         </article>
                         `;
 
-                        countries.insertAdjacentHTML('beforeend', html);
+                        countries.insertAdjacentHTML('afterbegin', html);
                     });
                 } 
             }
