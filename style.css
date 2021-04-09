@@ -6,7 +6,6 @@
 
 body {
     overflow-x: hidden;
-    overflow-y: visible;
 }
 
 /* ------------------ header ------------- */
@@ -48,30 +47,25 @@ header h1 {
 
 .search button {
     cursor: pointer;
-}
-/* ------------------ end of header ------------- */
+}/* ------------------ end of header ------------- */
 
 
+/* ------------------ added element container ------------- */
 .countries {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* border: 2px solid green; */
     position: relative;
     height: auto;
     padding: 10px;
     flex-wrap: wrap;
-    
-}
+}/* ------------------ end of added element container ------------- */
 
 /* --------- added elements ----- */
 .country-img {
-    /* position: absolute; */
     width: 300px;
     height: 170px;
-  
-
 }
 
 .country-img img{
@@ -81,31 +75,25 @@ header h1 {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-
-
 .country {
     width: 300px;
-    /* border: 2px solid red; */
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    /* padding: 10px; */
     height: 450px;
-    -webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.23); 
-    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.23);
+    -webkit-box-shadow: 0px 0px 3px 0.5px rgba(0,0,0,0.23); 
+    box-shadow: 0px 0px 3px 0.5px rgba(0,0,0,0.23);
     border-radius: 10px;
     font-size: 20px;
     line-height: 30px;
     margin: 1rem;
-    /* position: relative; */
 }
 
 .country-region {
     padding-bottom: 1rem;
     color: rgba(0, 0, 0, 0.5);
 }
-
 .country-name {
     padding-top: 1rem;
 }
@@ -113,9 +101,6 @@ header h1 {
 .country-data span{
     font-weight: bold;
 }
-
 .country-data {
     padding: 1rem;
-}
-
-/* --------- end of added elements ----- */
+}/* --------- end of added elements ----- */
