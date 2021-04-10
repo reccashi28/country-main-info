@@ -24,22 +24,23 @@ async function getCountriesList(searchField) {
         }
         
     })
-
-    const html = countriesList.map( country => {
-                return `<section class="country">
-                    <div class="country-img">
-                        <img src="${country.flag}" />
-                    </div>
-                    <div class="country-data">
-                        <h3 class="country-name"> ${country.name} </h3>
-                        <h4 class="country-region"><span>Region: </span> ${country.region} </h4>
-                        <p class="country-row"><span><i class="fas fa-users"></i> Population: </span> ${country.population} </p>
-                        <p class="country-row"><span><i class="far fa-smile"></i> Languages: </span> ${country.languages[0].name} </p>
-                        <p class="country-row"><span><i class="far fa-money-bill-alt"></i> Currencies: </span> ${country.currencies[0].name} </p>
-                    </div>
-                </section> `;
-        })
-        countries.innerHTML= html.map( list => list).join("");
+        const html = countriesList.map( country => {
+            return `<section class="country">
+                <div class="country-img">
+                    <img src="${country.flag}" />
+                </div>
+                <div class="country-data">
+                    <h3 class="country-name"> ${country.name} </h3>
+                    <h4 class="country-region"><span>Region: </span> ${country.region} </h4>
+                    <p class="country-row"><span><i class="fas fa-users"></i> Population: </span> ${country.population} </p>
+                    <p class="country-row"><span><i class="far fa-smile"></i> Languages: </span> ${country.languages[0].name} </p>
+                    <p class="country-row"><span><i class="far fa-money-bill-alt"></i> Currencies: </span> ${country.currencies[0].name} </p>
+                </div>
+            </section> `;
+    })
+    countries.innerHTML= html.map( list => list).join("");
+    
+    
 }
 
 searchBtn.addEventListener('click', () => {
