@@ -18,7 +18,7 @@ async function getCountriesList(searchField) {
     const data = await fetchCountries();
     const countriesList = data.filter ( country => {
         if(searchField){
-            return country.name.toLowerCase().includes(searchField.toLowerCase());
+            return country.name.toLowerCase().includes(searchField.toLowerCase()) | country.nativeName.toLowerCase().includes(searchField.toLowerCase());
         } else {
             return country;
         }

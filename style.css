@@ -31,6 +31,7 @@ header h1 {
     padding: 10px;
     border-radius: 2px;
     border: none;
+    outline: none;
 }
 .search {
     width: 23%;
@@ -39,12 +40,9 @@ header h1 {
     display: flex;
     justify-content: center;
 }
-
-.search input:focus,
-.search button:focus {
-    outline: none;
+.search input {
+    flex-grow: 1;
 }
-
 .search button {
     cursor: pointer;
 }/* ------------------ end of header ------------- */
